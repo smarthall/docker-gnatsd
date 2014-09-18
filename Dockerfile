@@ -1,9 +1,6 @@
-FROM scratch
+FROM apcera/gnatsd
 
 MAINTAINER Daniel Hall <daniel@danielhall.me>
-
-# Blank image with only gnatsd inside
-ADD gnatsd gnatsd
 
 # Always start gnatsd, because there is no /bin/sh
 ENTRYPOINT ["/gnatsd"]
