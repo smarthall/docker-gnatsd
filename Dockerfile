@@ -6,8 +6,8 @@ MAINTAINER Daniel Hall <daniel@danielhall.me>
 ENTRYPOINT ["/gnatsd"]
 
 # Default to 4222 and 8333
-CMD ["-p", "4222", "-m", "8333"]
+CMD ["-p", "4222"]
 
 # Export those ports
-EXPOSE 4222 8333
+EXPOSE 4222
 
